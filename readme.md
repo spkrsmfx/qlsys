@@ -1,4 +1,4 @@
-QLSys 0.1 by spkr/smfx
+QLSys 0.01 by spkr/smfx
 spkr@smfx.st
 
 Do whatever the fuck you want with this.
@@ -15,6 +15,6 @@ https://github.com/xXorAa/mdvtool - creaeting mdv files\
 https://github.com/tattlemuss/minymiser - packing ym3 files (ay regdump)\
 https://www.php.net/ - some stupid ass conversion tooling\
 https://git.platon42.de/chrisly42/unzx0_68000 - optmized zx0 depacker\
-https://imagemagick.org/index.php - image conversion\
+https://imagemagick.org/index.php - image conversion
 
 Have fun!
