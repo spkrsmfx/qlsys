@@ -3,7 +3,6 @@ NUM_SPRITES equ 8
 BOB_WIDTH	equ 28
 BOB_HEIGHT	equ 34
 
-	IFEQ	ALONE
 	org	 $30100
 unzx0Ptr		equ $40000-256-4
 screenpointer2	equ	$40000-256-12
@@ -21,7 +20,6 @@ wait_for_vbl	macro
 	beq		.w\@ 
 	move.w	#0,waitvbl
 	endm
-	ENDC
 
 ; here we make 4 routs that do the draw
 	opt o-
@@ -575,8 +573,8 @@ object_y2	ds.w	NUM_SPRITES+2
 memSpace
 	ds.b	8572-1260+4988		; 8572 / 13560needed
 
-bob1	include	'sprite1c.s'				;630
-bob2	include	'sprite2c.s'
+bob1	include	'sprites/sprite1c.s'				;630
+bob2	include	'sprites/sprite2c.s'
 bob2_1	include	'sprites/sprite2_1.s'
 bob2_2	include	'sprites/sprite2_2.s'
 bob2_3	include	'sprites/sprite2_3.s'
